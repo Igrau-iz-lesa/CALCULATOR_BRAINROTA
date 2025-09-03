@@ -20,7 +20,7 @@ def calculate():
         result = calculate_brainrot(bags, kpm, time_val)
         result_label.config(text=f"Ваша доза брейнрота: {result:.2f}")
     except ValueError:
-        messagebox.showerror("Ошибка", "Пожалуйста, введите целые числа во все поля")
+        messagebox.showerror("Ошибка ", "Пожалуйста, введите целые числа во все поля")
 
 
 # Создаем главное окно с тёмным фоном
