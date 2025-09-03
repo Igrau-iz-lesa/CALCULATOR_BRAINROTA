@@ -28,7 +28,7 @@ root = tk.Tk()
 root.title("Калькулятор брейнрота")
 root.geometry("400x300")
 root.configure(bg='#333333')  # Тёмно-серый фон
-root.iconbitmap('alesso.ico')
+root.iconbitmap(r'C:\Users\pavel\zamdi\alesso.ico')
 
 # Стиль для всех элементов
 label_style = {'bg': '#333333', 'fg': 'white', 'font': ('Arial', 10)}
