@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import os
 
 def calculate_brainrot(bags, kpm, time):
     try:
@@ -23,12 +24,17 @@ def calculate():
         messagebox.showerror("Ошибка", "Пожалуйста, введите целые числа во все поля")
 
 
+def find_icon_file(filename):
+    if os.path.exists(filename):
+        return filename
+
 # Создаем главное окно с тёмным фоном
+icon_file = find_icon_file('alesso.ico')
 root = tk.Tk()
 root.title("Калькулятор брейнрота")
 root.geometry("400x300")
 root.configure(bg='#333333')  # Тёмно-серый фон
-root.iconbitmap(r'C:\Users\pavel\zamdi\alesso.ico')
+root.iconbitmap(icon_file)
 
 # Стиль для всех элементов
 label_style = {'bg': '#333333', 'fg': 'white', 'font': ('Arial', 10)}
